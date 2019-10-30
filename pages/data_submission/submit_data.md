@@ -1,87 +1,83 @@
 ---
-title: "SPARC Data curation steps"
+title: "Submitting a dataset to SPARC"
 keywords: documentation, github
 sidebar: sparc_sidebar
 permalink: submit_data.html
-summary: This page outlines the workflow for submitting data to the SPARC DAT-Core, getting the data curated, released under embargo, and eventually making the data public. 
+summary: This page outlines the steps for submitting a dataset, getting the data curated, releasing the data under embargo, and eventually making the data publicly available. 
 folder: general
 ---
 
-## Steps for publishing data in DAT-Core
+## Steps for submitting a dataset
 
-{% include image.html file="sparc_workflow.png" alt="workflow" %}
+This documentation only applies to investigators that are funded throught the NIH SPARC effort. Each investigator has user-credentials under the account *SPARC Consortium* on the DAT-Core. All datasets that are SPARC related should be submitted to this account even though the investigator might have an separate *private* Blackfynn account. Dataset submission is required within 30 days of completing a project milestone (according to the [SPARC Material Sharing Policy](https://commonfund.nih.gov/sparc/materialsharing)). {% include image.html file="sparc_workflow.png" alt="workflow" %}
 
-
-Investigators will have 1 year from the time a milestone is completed to publish the resulting dataset (step 4). A dataset is published when it is available for viewing and download by the public and has been assigned a digital object identifier (DOI). During that year, the dataset will move through several stages, characterized by access rights and curatorial actions. Investigators will have 30 days from the completion of the milestone to formally submit their data to the SPARC Data Repository (DAT-CORE).  Submission of data is defined as sharing data with the Data Curation Team (step 2).
 
 ### 1. Creating a draft dataset
-**Timeline:** At any time, users can create a draft dataset within the SPARC Consortium organization in preparation for submitting the dataset.
+There are a couple of easy steps to submit a dataset:
 
-**Who has access to the data:** Draft data is private and is accessible only to those who you specifically invite to access the data. Neither Blackfynn, the Curation Team, nor NIH can access the data unless you invite them.
+1. Create a dataset on the DAT-Core (*SPARC Consortium* account on Blackfynn) by clicking the `New Dataset` button in the top-right corner of the webapplication and provide a **Dataset Name** and a short **Dataset Subtitle** describing the dataset. Then, click on `Create Dataset`. {% include image.html file="dataset_list_datcore.png" alt="workflow" %} You now created a *private* dataset that only you, as the dataset owner, can see.
 
-**Who owns the data:** The investigator that submitted the data or the person who is assigned as the owner of the dataset.
+2. Change the ownership of the dataset to the PI of the lab. This is a SPARC requirement and ensures that the PI is the only person who can publish the dataset. To do this, click on the `Permissions` tab, and add the PI to your dataset as a *manager*. Then click on the `manager` label next to his/her name and select `Make Owner`. You will no longer be the owner of the dataset, but still have *manager* permissions. {% include image.html file="dataset_permissions.png" alt="workflow" %}
 
-**Process:** During this step, investigators upload a dataset that represents the completion of a milestone according to the standards esablished by SPARC.
+3. Add permissions to your **Award team** (contact the DAT-Core if you need help adding people to your award team) and the **Curation team**. Select your award-team from the dropdown menu, and add with the appropriate permissions, and add the *SPARC Data Curation Team* with *manager* permissions. {% include image.html file="dat_core_permissions2.png" alt="workflow" %} You have now allowed your award-team and the curation team to see, and edit the dataset.
 
-A dataset is defined as follows: The set of data files, supporting documents, and metadata produced as the result of completing a milestone.  At time of submission, the  dataset may be considered complete (that is, no new data will will be collected), or it may represent a batch or slice of data that is part of a larger dataset being collected over several milestones. 
+4. Upload files to the dataset according to the [SPARC guidelines](https://docs.google.com/presentation/d/1EQPn1FmANpPsFt3CguU-JOQVMMlJsNXluQAK_gb2qVg/edit#slide=id.p1).  The SPARC Dataset Structure (version 1.2.2) may be [downloaded as a zip file](https://github.com/SciCrunch/sparc-curation/releases/tag/dataset-template-1.2.2) or you may create it on your own. For help with working with the SPARC Dataset Structure, which is based on the [BIDS specification](http://bids.neuroimaging.io/), contact **sparc@neuinfo.org**. More information on how to upload files can be found [here](file_upload_dat_core.html) {% include image.html file="dat_core_files.png" alt="workflow" %}Complete the metadata templates that are included in the downloadad *SPARC Dataset Structure* zip-file. Experimental metadata specified by the SPARC Data Standards Committee based on the Minimal Information for a Neuroscience Dataset (MINDS) specification and are captured in the following files: 1) submission.xlsx, 2) dataset_description.xlsx, 3) subjects.xlsx, and 4) samples.xlsx. An annotated list of these fields can be found [here](https://docs.google.com/spreadsheets/d/1e61r3F2weausmBhqFK8RlYLviC3rya44so5m15mPRTw/edit#gid=108617967).
 
-The data and metadata standards established by SPARC, as outlined below, must be followed before the dataset is submitted for curation.
+5. Provide a detailed description of your dataset using the description editor on the DAT-Core. This description will be highly visible once your dataset is published. {% include image.html file="description_dataset_datcore.png" alt="workflow" %} 
 
-**Steps for creating a draft dataset:**
-- Create and name a dataset in the SPARC Data Repository (within the **SPARC Consortium Organization** on Blackfynn)
-- Provide a short description for the dataset
-- Upload files and organize the dataset according to the requirements of the SPARC Data Standards Committee and Data Curation Team (see below). For many users the easiest method is to drag the parent folder of the BIDS folder hierarchy into the DAT-Core platform. All files will be uploaded and the folder structure will be maintained.
-- Share the data with the curation team and NIH
+6. Add a nice banner image that will be associated with the dataset and will be visisble once the dataset is published. Click on the `Upload Banner Image` in the `Settings` or `Overview` page. {% include image.html file="banner_dataset.png" alt="workflow" %} 
 
-**SPARC dataset requirements** Each dataset will comprise the following:
-- A protocol that has been [submitted to Protocols.io](https://docs.google.com/presentation/d/1WhoLvOVRIbCzu3x30Dd0O1cC09ZGT4g0IFOf4Eq7yfI/edit#slide=id.p) as part of the SPARC group
-- Data files organized in folders according to [SPARC guidelines](https://docs.google.com/presentation/d/1EQPn1FmANpPsFt3CguU-JOQVMMlJsNXluQAK_gb2qVg/edit#slide=id.p1).  The SPARC Dataset Structure (version 1.1) may be [downloaded as a zip file](https://github.com/SciCrunch/sparc-curation/releases/tag/dataset-template-1.1) or you may create it on your own. For help with working with the SPARC Dataset Structure, which is based on the [BIDS specification](http://bids.neuroimaging.io/), contact **sparc@neuinfo.org**.
-- Metadata files and documentation organized according to the SPARC Dataset Structure.  Templates are provided in the zip file (docs file) and include the following:
-  - [Submission metadata](https://github.com/SciCrunch/sparc-curation/blob/dataset-template-1.1/resources/DatasetTemplate/submission.xlsx)
-  - [Dataset description for publication](https://github.com/SciCrunch/sparc-curation/blob/dataset-template-1.1/resources/DatasetTemplate/dataset_description.xlsx)
-  - A representative figure that will be published along with the descriptive metadata
-  - Experimental metadata specified by the SPARC Data Standards Committee based on the Minimal Information for a Neuroscience Dataset (MINDS) specification.  MINDS metadata fields have been incorporated into the [subjects](https://github.com/SciCrunch/sparc-curation/blob/dataset-template-1.1/resources/DatasetTemplate/subjects.xlsx) and [samples](https://github.com/SciCrunch/sparc-curation/blob/dataset-template-1.1/resources/DatasetTemplate/samples.xlsx) templates available in the zip file.  An annotated list of these fields can be found [here](https://docs.google.com/spreadsheets/d/1e61r3F2weausmBhqFK8RlYLviC3rya44so5m15mPRTw/edit#gid=108617967).
+7. Select a license that you want to associate with the dataset once published. Click on the `license` dropdown menu in the `Dataset Settings` page. {% include image.html file="license_datcore.png" alt="workflow" %} 
 
-### 2. Submit dataset to Data Curation Team
-**Timeline:** A dataset is considered submitted once it has been shared with the Data Curation Team.  Dataset submission is required within 30 days of completing a project milestone (according to the [SPARC Material Sharing Policy](https://commonfund.nih.gov/sparc/materialsharing)).
+8. Finally, you will need to submit a protocol to [Protocols.io](https://docs.google.com/presentation/d/1WhoLvOVRIbCzu3x30Dd0O1cC09ZGT4g0IFOf4Eq7yfI/edit#slide=id.p) as part of the SPARC group. 
 
-**Who has access to the data:** The data is accessible to you and designated individuals, as well as the Data Curation Team and NIH. 
+**NOTE:** There are other things that need to be entered into the DAT-Core before a dataset can be published such as: 1) the contributors, and 2) a list of tags. However, the curation team will help with adding these to the dataset from the CSV templates that you will provide as part of the uploaded files.
 
-**Who owns the data:** The investigator that submitted the data or the person who is assigned as the owner of the dataset, but the Curation Team will have write permission to harmonize the metadata and file structure as needed.
-
-**Process:** The Data Curation Team will work with the investigators to curate the dataset. Curation includes capturing the metadata, mapping it to the standardized metadata models developed by the SPARC Data Standards Committee, and integrating it into the SPARC Integrated Dataset (a master dataset that incorporates all SPARC data that has been curated).
-
-**Required steps for the data owner:**
-- Share the dataset with the SPARC Data Curation Team on the DAT-Core platform
-- Work with the Curation Team to implement required curation
-
-### 3. Release data to the SPARC consortium
-**Timeline:** As soon as the curation process has been completed, the investigator is expected to release the data under embargo to the SPARC Consortium.
-
-**Who has access to the data:** The data is now shared with all members of the SPARC Embargoed Data Sharing Group team who have signed the CDA. A segment of the metadata (as defined by the SPARC Data Sharing Committee) will be available to the public at this time. SPARC members who have signed the CDA will be able to access the full metadata and request access to the data files, by permission of the ownder.
-
-**Who owns the data:** Datasets that are released are owned by the individual investigator for the purpose of providing access upon request.  However, datasets under embargo are read only, as they are now available for others in the SPARC Consortium to reuse.   
-
-**Process:** The dataset is now considered to be an embargoed dataset and will be assigned a provisional DOI by the DAT-CORE so that it can be referenced in any manuscripts in preparation. Embargoed datasets are “read-only” access to all members of the **SPARC Embargoed Data Sharing Group**. If any modifications to the data or metadata are required, e.g., an error is detected, changes must be made by the administrator and a new version must be released that documents the change from the original.    
-
-**Required steps for the data owner:**
-- The owner will need to change the ‘sharing’ setting to include the **SPARC Embargoed Data Sharing Group** with read-only privileges.
-
-### 4. Publishing submitted dataset into public domain 
-**Timeline:** Within one year of the completion of the milestone, or at the time of online publication of a paper using the dataset, whichever comes first, the data will be released to the public portal and assigned an open license in accordance with the SPARC Data Sharing policy.
-
-**Who has access to the data:** The dataset is now publicly available in accordance to the terms of the license chosen.
-
-**Who owns the data:** The investigator that submitted the data or the person who is assigned as the owner of the dataset.  The owner will have provided proper citation metadata so that the reuse of the data can be appropriately credited.
-
-**Process:** The publishing steps are outlined in the [Publishing Data Steps](publish_data.html) page.
-
-**Required steps for the data owner:**
-- The dataset will be automatically published at one year post milestone, if not published earlier by the investigator, e.g., as part of a publication or because s/he wants to.
+**NOTE:** You are free to add additional metadata in the [DAT-Core Metadata database](https://help.blackfynn.com/en/collections/1941429). If you do this, **do not** use the following model names: 1) Term, 2) Subject, 3) Protocol, 4) Researcher, 5) Summary, or 6) Sample as these will be overritten by the SPARC curation process. 
 
 
-##  Schematic representation of SPARC Data on the DAT-Core
+### 2. Placing your data in Embargo
+Now that you have created a dataset and you are ready for the data curation to help with further curation and validation of the data, you need to share your data with the rest of the consortium.
 
-The figure below is a schematic representation of the workflow described above. It highlights how data is generated by individual investigators, curated by the Data Curation Team, and shared as an embargoed dataset with the **SPARC Embargoed Data Sharing Group**. It shows how the data is made available to the public over time.
+1. Add the **SPARC Embargoed Data Sharing Team** to your dataset with **viewer** permissions. This allows any SPARC investigator who has signed the SPARC Non-disclosure form to see your data. {% include image.html file="embargoe_datcore.png" alt="workflow" %} 
 
-{% include image.html file="SPARC_Submission_and_Publishing_Workflow.png" alt="workflow" %}
+### 3. Publishing your dataset
+When the dataset is ready to be published, the dataset owner can publish the dataset and make it publicly available. There are two steps required for dataset publication: 1) Protocol publication on Protocols.io, and 2) Dataset Publication on the DAT-Core.
+
+
+1. Make your protocol public on Protocols.io
+The first step to making your data public is to make sure your protocols are made public on [Protocols.io](https://protocols.io). Perform the following steps:
+
+    1. Log into protocols.io, and publish your dataset’s protocol(s) by clicking the orange PUBLISH button.{% include image.html file="protocols_ss.png" alt="protocol" %}
+
+    2. Get a DOI for your protocol by clicking the orange GET DOI button.
+
+    3. Give the curators a couple days to update your protocol URL to the DOI in your dataset_description file, or go ahead and do it yourself.  To do it yourself, update the URL(s) to your protocol(s) by editing the Blackfynn "Protocol" metadata record.
+
+    3. Update the *protocol* record(s) in the DAT-Core to correctly store the newly generated DOI. To do this, click on the `Records` tab in the dataset, and select the `protocol` model if this exist. Then, click on the protocol that you want to update and click the `edit` button. Update the `URL` field with the correct DOI URL anc click on `Save`. {% include image.html file="model_records.png" alt="protocol" %}
+
+    4. Upon receiving confirmation from the curation team that your dataset has been fully curated and is ready to publish, continue to the steps below.
+
+
+2. Make your dataset public on the DAT-Core
+Publishing your Blackfynn datasets will make your data publicly available for the world to see. The dataset will be findable and accessible on [Blackfynn Discover](https://discover.blackfynn.com) and the [SPARC Portal](https://data.sparc.science).
+
+    1. Make sure the following information is correct for the dataset:
+
+        - Dataset Title
+        - Dataset SubTitle
+        - Dataset Describtion
+        - Dataset Contributors
+        - Dataset Tags
+        - Dataset License (must select **CC-BY license**, per SPARC policy)
+        - The Banner Image (.jpg or .png)
+        - The URLS in the *Protocol* records.
+
+    2. Go to the *Settings* tab for the dataset on the DAT-Core.
+
+    3. Have the owner of the dataset click on `Publish to Blackfynn Discover` button. It is required for the owner to have an [ORCID ID](https://orcid.org/) associated with their user-profile. Publishing a dataset will automatically request a Data Object Identifier (DOI) through [DataCite](https://datacite.org/) if you had not reserved one before. You can always publish an updated version of the dataset if needed at a later time, or un-publish a dataset if needed. {% include image.html file="publish_to_discover.png" alt="discover" %}
+
+## Summary
+This document outlined the steps required to submit and publish a SPARC dataset. Please feel free to reach out to the DAT-Core or Curation team with specific questions about the workflow. 
+
+
