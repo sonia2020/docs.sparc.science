@@ -33,7 +33,7 @@ entries:
     - title: Uploading Files to DAT-Core
       url: /file_upload_dat_core.html
       output: web, pdf
-    - title: SODA Data submitting tool
+    - title: SODA Data organization tool
       url: /soda.html
       output: web, pdf
   - title: Data Resource Center
