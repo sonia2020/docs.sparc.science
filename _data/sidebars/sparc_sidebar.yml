@@ -36,6 +36,9 @@ entries:
     - title: SODA Data organization tool
       url: /soda.html
       output: web, pdf
+    - title: About SAWG
+      url: /sawg.html
+      output: web, pdf  
   - title: Data Resource Center
     output: web, pdf
     folderitems:
