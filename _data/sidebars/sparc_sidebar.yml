@@ -60,4 +60,10 @@ entries:
     - title: Map visualization docs
       url: /sparc_portal_maps.html
       output: web, pdf
+  - title: Webinars
+    output: web, pdf
+    folderitems:
+    - title: All's FAIR in Image Segmentation
+      url: /mbf_webinar.html
+      output: web, pdf
 
