@@ -48,6 +48,9 @@ entries:
     - title: MAP-Core Information
       url: /Webinar_by_PeterHunter.html
       output: web, pdf
+    - title: Webinars
+      url: /webinars.html
+      output: web, pdf
   - title: SPARC Portal
     output: web, pdf
     folderitems:
