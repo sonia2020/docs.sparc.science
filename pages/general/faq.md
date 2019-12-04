@@ -28,7 +28,7 @@ Databases such as OpenNeuro.org, LORIS, COINS, XNAT, SciTran and others will acc
 Validation tools can be developed that can automatically check dataset integrity and let you and the curation team easily spot missing values.
 
 ### Where can I find help on uploading my protocol to protocols.io?   
-We’ve provided a brief tutorial [here](https://docs.google.com/presentation/d/1WhoLvOVRIbCzu3x30Dd0O1cC09ZGT4g0IFOf4Eq7yfI/edit).  Please note this document changes a little as we get questions to improve readability,  More information is available on the protocols.io website.  
+We’ve provided a brief tutorial [here](https://docs.google.com/presentation/d/1WhoLvOVRIbCzu3x30Dd0O1cC09ZGT4g0IFOf4Eq7yfI/edit).  Please note this document changes a little as we get questions to improve readability,  More information is available on the protocols.io website.  eggrg
 
 ### I tried to join the SPARC group in protocols.io, but I can’t find it?
 The SPARC group is private so you need to be added as a member.  Anita Bandrowski is the administrator.  Please send her a message at her protocols.io user account: [https://www.protocols.io/researchers/anita-bandrowski](https://www.protocols.io/researchers/anita-bandrowski), including the email address you used to set up the protocols account.
